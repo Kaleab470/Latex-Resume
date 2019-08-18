@@ -7,92 +7,135 @@
 
 % global formatting tweaks
 \pagestyle{empty}
-\geometry{margin=0.5in}
+\geometry{margin=0.4in}
 \setlength\parindent{9pt}
 \setlist{nosep}
 \renewcommand\labelitemi{--}
 
 % new commands!
 \newcommand{\name}[1]{\begin{center}\section*{\huge #1}\end{center}}
-\newcommand{\topinfo}[1]{\begin{center}\vspace{-0.2cm}#1\vspace{-0.2cm}\end{center}}
-\newcommand{\resumesection}[1]{\vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
+\newcommand{\topinfo}[1]{\begin{center}\vspace{-0.3cm}#1\vspace{-0.2cm}\end{center}}
+\newcommand{\resumesection}[1]{\vspace{-0.4cm}\section*{#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
+
+
+% % new ONES!
+% % Needed for the photo ID
+% \RequirePackage[skins]{tcolorbox}
+
+% % Defines writer's mobile (optional)
+% % Usage: \mobile{<mobile number>}
+% \newcommand*{\mobile}[1]{\def\@mobile{#1}}
+
+% % Defines writer's email (optional)
+% % Usage: \email{<email adress>}
+% \newcommand*{\email}[1]{\def\@email{#1}}
+
+% % Defines writer's linked-in (optional)
+% % Usage: \linkedin{<linked-in-nick>}
+% \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+
+% % Defines writer's github (optional)
+% % Usage: \github{<github-nick>}
+% \newcommand*{\github}[1]{\def\@github{#1}}
+
 
 \begin{document}
 
-\name{Adam Jean-Laurent}
-\topinfo{github.com/adamjeanlaurent}
-\topinfo{linkedin.com/in/adam-jean-laurent}
-\topinfo{adamjeanlaurent@gmail.com}
-\topinfo{401-474-7862}
+\name{Kaleab Gebremichael}
+\topinfo{www.github.com/kaleab470}
+\topinfo{www.linkedin.com/in/kaleab-gebremichael}
+\topinfo{kaleab.s.gebremichael@vanderbilt.edu}
+\topinfo{www.kaleab.me}
+
 
 \resumesection{Education}
 
-\textbf{University Of Rhode Island}, Kingston, RI \hfill May 2021 (Expected)
+\textbf{Vanderbilt University}, Nashville, TN \hfill May 2022
 \begin{itemize}
-	\item Bachelor of Arts (BA) in Computer Science, 3.43/4.0 GPA.
-	\item Coursework includes Data Structures \& Algorithms, Object-Oriented Programming, Math Tools For Computing, Software Engineering, Web Design, Calculus, Statistics, and Fundamentals Of Programming Languages. 
+	\item B.S. in Computer Science and Mathematics
+	\hfill Major GPA: 4.00/4.00
+	\item \textbf{Relevant Coursework: }Intermediate Software Design, Data Structures \& Algorithms, Discrete Structures, Programming and Problem Solving, Computers \& Ethics, Multivariable Calculus.
+	\item \textbf{Technical Skills: }C++, Java, Python, Swift, Git, Agile, Scrum
 \end{itemize}
 
-\resumesection{Experience}
+\resumesection{Work Experiences}
 
-\textbf{Microsoft}, New Technologist Intern \hfill June 2019--Present
+\textbf{Microsoft}, New Technologist Intern \hfill June 2019 - August 2019
 \begin{itemize}
-	\item Starting June 24th
+	\item Spearheaded a team of 5 to implement an end-to-end app using Agile methodology and design thinking
+	\item Developed iOS apps using Swift and Xcode from both aspects of a Program Manager and a Software Engineer
+	\item Learned industry development practices such as code review, unit/integration testing and product specs
+	\item Chosen to pitch final project to Microsoft CVPs, Executives and Distinguished Engineers
+	\\[-0.7\baselineskip]
 \end{itemize}
 
-\textbf{University Of Rhode Island}, IT Consultant \hfill September 2018--Present
+\textbf{Vanderbilt University}, Teaching Assistant for CS 2201 Data Structures
+\hfill August 2019 - Present
 \begin{itemize}
-	\item Provide professional computing services to URI community such as troubleshooting, reformatting, Ethernet port-teching, and other software/hardware issues.
-	\item Use verbal communication over the phone, and written communication when writing trouble tickets and emails.
+	\item Coordinate with 20 other TAs to hold weekly office hours and grade examinations
+	\item Assist students in developing good coding practices and effective program design skills
+	\item Review, debug and evaluate students' weekly projects and assignments for 200+ undergraduates
+	\\[-0.7\baselineskip]
 \end{itemize}
+
+\textbf{Vanderbilt University IT}, Audio/Video Technician \hfill August 2018 - Present
+\begin{itemize}
+	\item Interact on a daily basis with 100+ staff, faculty and guests to keep the campus technology running smoothly and efficiently
+	\item Help troubleshoot fast-paced technical issues when assistance is requested and report issues to be resolved
+	\item Perform regular checks on various room technology to ensure perfect workability of components
+\end{itemize}
+
+
+\resumesection{Activities/Leadership}
+
+\textbf{VandyApps,} Secretary
+\hfill April 2019 - Present
+\begin{itemize}
+	\item Organize and help lead weekly meetings and special events with professors, companies and other organizations
+	\item Developed plans that increased club member count by 40\%
+	\item Initiated diversity and inclusion campaigns within club
+	\\[-0.7\baselineskip]
+\end{itemize}
+
+\textbf{Hack++}
+\hfill March 2019
+\begin{itemize}
+    \item Used HTML and CSS to develop a website as an aid to parents of kids with cancer
+    \item Recipient of a Google Home award out of a total 120 participants 
+\end{itemize}
+
 
 \resumesection{Projects}
 
-\textbf{YouTube Sync}, https://github.com/adamjeanlaurent/YouTube-Sync  
+\textbf{Engage}
+\hfill July 2019
 \begin{itemize}
-	\item Built web application that allows users to synchronize their YouTube video even when pausing, playing, and skipping.
-	\item Implemented websockets on to express web server using socket.io.
-	\item Used the YouTube iFrame Player API to create custom YouTube player capable of intercating with a websocket server.
-	\item Used HTML/CSS, JavaScript, Node.js, and Git.
+	\item Used Swift and Xcode to develop iOS application that helps people deal with their tech addictions
+	\item Built REST API using Express and deployed web app to Azure to increase number of concurrent users to 100+
+	\item Implemented practices such as Kanban Boards and Sprint cycles to maximize efficiency within the team
+	\\[-0.7\baselineskip]
 \end{itemize}
 
-\textbf{Pomodoro Study}, https://github.com/adamjeanlaurent/Pomodoro-Study
+% \textbf{Program Design and Data Structures} (CS 2201), Class Project
+% \hfill March 2019
+% \begin{itemize}
+% 	\item Used C++ to design a program that manipulates text files to physically model sound synthesis and simulate plucking of a guitar string
+% 	\item Used several APIs and libraries to add multiple functionalities and make it user-friendly after finishing the given class requirements
+% 	\\[-0.7\baselineskip]
+% \end{itemize}
+
+\textbf{Location Conflict Manager}
+\hfill August 2019
 \begin{itemize}
-	\item Built a CRUD web application to help users practice the Pomodoro study technique.
-	\item  Built backend authorization system that allowed users to register/login, have cookies/sessions.
-	\item Used CanvasJS to display user study data visually.
-	\item Used HTML/CSS, JavaScript, Node.js, MongoDB, Bootstrap, and Git.
+    \item Brainstormed and designed a chrome extension that alerts students when the classes they have enrolled for are too far apart to reach in time.
+	\item Implemented it so that it retrieves information about the enrolled classes directly from the student's Vanderbilt class-enrollment portal
+	\\[-0.7\baselineskip]
 \end{itemize}
 
-\resumesection{Skills}
-
-\textbf{Programming Languages}
+\textbf{Math Battle}
+\hfill July 2019
 \begin{itemize}
-	\item (Proficient) JavaScript, HTML, CSS, C, C++, (Intermediate) Python 
-\end{itemize}
-
-\textbf{Frameworks}
-\begin{itemize}
-	\item jQuery, Node.js, Express.js, Bootstrap
-\end{itemize}
-
-\textbf{Tools/Databases}
-\begin{itemize}
-	\item Visual Studio, APIs, Bash, Git, MySQL, MongoDB, \LaTeX
-\end{itemize}
-
-\resumesection{Activities}
-
-\textbf{Academic Excellence Chair}, National Society Of Black Engineers \hfill April 2019--Present
-\begin{itemize}
-	\item Promote attendance and participation in NSBE meeting and activities.
-	\item Organize tutoring, and refer members to academic and career counseling.
-	\item Plan professional development and hands on workshop events.
-\end{itemize}
-
-\textbf{Telecommunications Committee}, National Society Of Black Engineers \hfill April 2019--Present
-\begin{itemize}
-	\item Work on a small team to design and build URI NSBE's website.
+	\item Built a competitive iOS game in Swift as a way to settle quick arguments among friends
 \end{itemize}
 
 \end{document}
